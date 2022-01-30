@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/jpg" href="Tekmo.png">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<div class="w3-container">
+	<p class="w3-center">
+	<img src="Tekmo.png" width="20%">
+	</p>
+</div>
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="Barang('Mb')">Motherboard</button>
+ <button class="w3-bar-item w3-button" onclick="Barang('CPU')">Processor</button>
+ <button class="w3-bar-item w3-button" onclick="Barang('RAM')">RAM</button>
+ <button class="w3-bar-item w3-button" onclick="Barang('HDD')">Harddisk</button>
+ <button class="w3-bar-item w3-button" onclick="Barang('VGA')">VGA CARD</button>
+</div>
+<div id="Mb" class="w3-container HR w3-center" style="display:none">
+	<h2><b>Motherboard</b></h2>
+	<hr>
+	<img src="Mobo.png" class="w3-animate-fading" width="30%">
+</div>
+<div id="CPU" class="w3-container HR w3-center" style="display:none">
+	<h2><b>Processor</b></h2>
+	<hr>
+	<img src="CPU.png" class="Animasi w3-animate-bottom" width="30%">
+</div>
+<div id="RAM" class="w3-container HR w3-center" style="display:none">
+	<h2><b>RAM</b></h2>
+	<hr>
+	<img src="Ram.png" class="Animasi w3-animate-top" width="30%">
+</div>
+<div id="HDD" class="w3-container HR w3-center" style="display:none">
+	<h2><b>Harddisk</b></h2>
+	<hr>
+	<img src="HDD.png" class="Animasi w3-animate-zoom" width="30%">
+</div>
+<div id="VGA" class="w3-container HR w3-center" style="display:none">
+	<h2><b>VGA CARD</b></h2>
+	<hr>
+	<img src="rtx3090.png" class="Animasi w3-animate-left" width="30%">
+</div>
+<script>
+	function Barang(Hardware) {
+ var i;
+ var x = document.getElementsByClassName("HR");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(Hardware).style.display = "block"; 
+}
+
+</script>
+</body>
+</html>
